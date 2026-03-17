@@ -1,0 +1,395 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================= BODY ================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: #000; /* fallback */
+}
+
+
+/* ================= HEADER (ON TOP OF HERO) ================= */
+header {
+  position: absolute; /* 🔥 key change */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: transparent; /* remove separate bg */
+  padding: 15px 30px;
+}
+
+/* Navbar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-style: italic;
+  color: #fff;
+}
+
+.logo span {
+  color: #3086e7;
+}
+
+.logo-text {
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 10px rgba(48,134,231,0.7);
+  font-size: 27px;
+}
+
+.logo-image {
+  width: 100px;
+  height: 100px;
+}
+
+/* Links */
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+
+.a-element {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.a-element:hover {
+  color: #3086e7;
+}
+
+.a-element:hover {
+  color: rgb(41, 125, 194);
+}
+
+.a-element:last-child {
+  background-color:rgb(194, 41, 143);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.a-element:last-child:hover {
+  background-color: rgb(41, 125, 194);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+}
+
+/* ================= HOME CONTENT ================= */
+/* ================= HERO (NAV + HOME COMBINED) ================= */
+.home-section {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  overflow: hidden;
+}
+
+/* Background for full hero */
+.home-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://static.vecteezy.com/system/resources/previews/042/058/444/non_2x/blue-light-shining-with-sparks-background-illustration-vector.jpg") no-repeat center;
+  background-size: cover;
+  z-index: 0;
+ 
+}
+
+.home-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: auto;
+  padding-top: 150px; /* push below navbar */
+  text-align: center;
+  animation: fadeUp 1.5s ease forwards;
+  opacity: 0;
+}
+.home-content span{
+  color: rgb(194, 41, 143);
+  font-size: 35px;
+  }
+  
+
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.home-content h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  
+}
+
+.home-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color:rgb(194, 41, 143) ;
+}
+
+/* ================= VISION ================= */
+.vision-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fdfcfd;
+   color: #000;
+}
+
+.vision-section h2 {
+  font-size: 32px;
+  color: #0f59ad;
+}
+
+.vision-section .description {
+  max-width: 700px;
+  margin: auto;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* ================= MISSION ================= */
+.mission-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffffff;
+  color: #000;
+}
+
+.mission-section h2 {
+  font-size: 32px;
+  color:#0f59ad;
+}
+
+.mission-section .description {
+  max-width: 700px;
+  margin: auto;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* ================= FOOTER ================= */
+.Footer-container {
+  background-color: #333;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/028/863/589/non_2x/abstract-diagonal-pink-lines-overlap-on-dark-blue-background-vector.jpg");
+  background-size: cover;
+  padding: 40px 20px;
+}
+
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Footer-heading {
+  flex: 1;
+  min-width: 250px;
+}
+
+.Footer-1 span {
+  color: #0f59ad;
+}
+
+.Footer-1 p{
+  font-size: 16px;
+  padding-right: 70px;
+}
+
+.Footer-2 h3 {
+  color: #ad0f85;
+}
+
+.Footer-2 ul {
+  list-style: none;
+}
+
+
+
+.map-container iframe {
+  width:100%;
+  height:190px;
+  border-radius:10px;
+  border:none;
+  display: block;
+}
+
+
+
+
+
+/* Bottom */
+.Footer-bottom {
+  text-align: center;
+  padding: 15px;
+  background: #000000;
+}
+
+/* ================= RESPONSIVE ================= */
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+
+  /* Header */
+  header {
+    padding: 10px 15px;
+  }
+
+  /* Logo */
+  .logo-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  /* Navbar */
+  .navbar-links {
+    gap: 15px;
+  }
+
+  /* Home */
+  .home-content {
+    padding-top: 140px;
+    max-width: 90%;
+  }
+
+  .home-content h1 {
+    font-size: 26px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  /* Header */
+  header {
+    padding: 8px 25px;
+   
+   
+  }
+
+  /* Navbar Layout Fix */
+  .nav-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+
+
+
+  /* Logo */
+  .logo {
+    gap: 5px;
+  }
+
+  .logo-image {
+    width: 55px;
+    height: 55px;
+   
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+
+  /* Home Section */
+  .home-section {
+    min-height: 100vh;
+    background-size: cover;
+  }
+
+  .home-content {
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .home-content h1 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .home-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Vision & Mission */
+  .vision-section,
+  .mission-section {
+    padding: 40px 15px;
+  }
+
+  .vision-section h2,
+  .mission-section h2 {
+    font-size: 24px;
+  }
+
+  .vision-section .description,
+  .mission-section .description {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .Footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Footer-heading {
+    width: 100%;
+  }
+
+  .Footer-1 p {
+    padding-right: 0;
+  }
+
+  .Footer-bottom {
+    font-size: 12px;
+  }
+}

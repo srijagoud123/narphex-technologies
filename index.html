@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Narphex Technologies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P3LMZPN0XS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P3LMZPN0XS');
+</script>
+</head>
+<body>
+  <!-- nav-bar section -->
+  <header>
+    <div class="nav-bar">
+      <div class="logo">
+        <img src="img/logo (2).jpeg" alt="logo-image" class="logo-image">
+
+        <p class="logo-text"><b>Narphex <span>Technologies</span></b></p>
+       
+    </div>
+  
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+     
+  </header>
+  
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+
+  <!-- Home Section -->
+<div class="home-section" id="Home">
+    <div class="home-content">
+      <h1><span>Narphex Technologies </span> (OPC) Private Limited is a technology company focused on developing innovative digital platforms and mobile applications.</h1>
+      <p><strong>We aim to create secure, user-friendly, and scalable solutions that connect people and enhance online experiences.</strong></p>
+          </div>
+    
+  </div>
+
+  <!-- Our Vision Section-->
+  <div class="vision-section" id="Vision">
+    <h2>Our Vision</h2>
+    <p class="description">
+        To become a trusted global technology company that develops powerful digital platforms for social networking, communication, and online communities.
+    </p>
+  </div>
+
+  <!--Our mission Section-->
+  <div class="mission-section" id="Mission">
+    <h2>Our Mission</h2>
+    <p class="description">
+        To build modern digital platforms that help people connect, communicate, and create meaningful relationships through innovative technology.    </p>
+  </div>
+
+  
+<!--Footer-->
+<div class="Footer-container">
+    <div class="Footer">
+      <div class="Footer-heading Footer-1">
+        <h2>Narphex<span> Technologies</span></h2><br>
+        <p>At Narphex Technologies (OPC) Private Limited, we create smart and future-ready digital solutions designed to help businesses thrive online. From interactive websites to powerful mobile applications, we turn creative ideas into secure, user-friendly, and scalable digital experiences.</p><br>
+      </div>
+       
+  
+ 
+  <div class="Footer-heading Footer-2">
+    <h3>Get In Touch</h3><br>
+    <ul>
+      <li>📍Pranava Group, beside Harsha toyota showroom, Land Mark Residency, Kothaguda, Hyderabad, Telangana 500084</li>
+      <li>📧info.narphextechnologies@gmail.com</li>
+      <li>📞6301134554</li>
+  <br>
+      
+    
+  
+     
+    </ul>
+  </div>
+  
+  <div class="map-container">   
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.967378288132!2d78.3674508!3d17.461275399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93d9386c7889%3A0xd02656c995193b7e!2sThe%20Business%20Park%20-%20by%20Pranava%20Group!5e0!3m2!1sen!2sin!4v1773744350086!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </iframe>
+  </div>
+
+  </div>
+  </div>
+  
+  <div class="Footer-bottom">
+    <p>© 2026 Narphex Technologies. All rights reserved. Powered by innovation </p>
+  </div>
+    
+    <script>
+      const menu = document.querySelector('.navbar-links');
+      const links = document.querySelectorAll('.a-element');
+      const toggleBtn = document.querySelector('.hamburger'); // your hamburger button
+    
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+         menu.classList.remove('show') //update hamburger icon
+        });
+      });
+    </script>
+  </body>
+  </html>
