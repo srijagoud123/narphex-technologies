@@ -339,7 +339,7 @@ header {
 
   /* Home Section */
   .home-section {
-    min-height: 80vh;
+    min-height: 50vh;
     background-size: cover;
   }
 
