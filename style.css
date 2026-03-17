@@ -1,4 +1,4 @@
-/* ================= RESET ================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -340,6 +340,7 @@ header {
   /* Home Section */
   .home-section {
     min-height: 100vh;
+    height:auto;
     background-size: cover;
   }
 
